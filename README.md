@@ -12,6 +12,16 @@ This requires ImageMagick, qrencode, libgfshare utils, and zbarimg.  Example als
 brew install libgfshare qrencode coreutils imagemagick zbar
 ```
 
+## Installing
+
+There is a script which will copy the [un]shamiqr scripts to $HOME/bin.
+
+This is all it does so feel free to do it yourself if you prefer.
+
+```bash
+./install.sh
+```
+
 ## Encoding
 
 Create a png by interactively typing a password:
