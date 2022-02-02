@@ -57,6 +57,8 @@ Try different values for resize until zbarimg gives the right number of qr codes
 
 If you're having trouble finding a good size, try qrmost.  This will find the image with the most QR codes in it and optionally save it.
 
+This operates via brute force checking so only use it if you need to or if you've got cycles to spare.
+
 ```bash
 qrmost IMG_4040.jpeg best.jpeg
 ```
