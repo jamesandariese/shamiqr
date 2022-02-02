@@ -7,3 +7,4 @@ mkdir -p "$BINDIR"
 
 cp -a shamiqr.sh "$BINDIR"/shamiqr
 cp -a unshamiqr.sh "$BINDIR"/unshamiqr
+cp -a qrmost.sh "$BINDIR"/qrmost
