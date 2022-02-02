@@ -44,9 +44,9 @@ Decoding a secret from an image with a bunch of QR codes in it (must only by sha
 unshamiqr IMG_4040.jpg output.txt
 ```
 
-Lowering the resolution if there's a bunch of garbage in your image:
+Lowering the resolution and sharpening if there's a bunch of garbage in your 44 megapixel camera phone image:
 
 ```bash
-convert IMG_4040.jpeg -resize 400x -unsharp 0x1 test.jpeg
+convert IMG_4040.jpeg -resize 400x -unsharp 10x10 test.jpeg
 unshamiqr test.jpeg output.txt
 ```
