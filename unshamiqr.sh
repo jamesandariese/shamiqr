@@ -16,14 +16,16 @@ cnf() {
 }
 
 which base64 > /dev/null     || cnf "base64: not found"
-which gfsplit > /dev/null    || cnf "gfsplit: not found, install libgfsplit or related packages"
-which zbarimg > /dev/null    || cnf "zbarimg: not found, install zbarimg or related packages"
+which gfsplit > /dev/null    || cnf "gfsplit: not found, install libgfshare-bin or related packages"
+which zbarimg > /dev/null    || cnf "zbarimg: not found, install zbar-tools or related packages"
 
 [ x"$(echo -n test | base64 | base64 -d)" == xtest ] || cnf "base64 does not work.  install GNU coreutils and make sure base64 is linked to them."
 
 USAGE="$0: unshamiqr input.jpeg output.txt
 
 Reads shamir shares from an image and attempts to assemble the original information
+
+If you have trouble with an image, try increasing the contrast.
 "
 
 DEBUG=no

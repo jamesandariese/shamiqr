@@ -16,7 +16,7 @@ cnf() {
 }
 
 which base64 > /dev/null     || cnf "base64: not found"
-which gfsplit > /dev/null    || cnf "gfsplit: not found, install libgfsplit or related packages"
+which gfsplit > /dev/null    || cnf "gfsplit: not found, install libgfshare-bin or related packages"
 which qrencode > /dev/null   || cnf "qrencode: not found, install qrencode or related packages"
 
 [ x"$(echo -n test | base64 | base64 -d)" == xtest ] || cnf "base64 does not work.  install GNU coreutils and make sure base64 is linked to them."
