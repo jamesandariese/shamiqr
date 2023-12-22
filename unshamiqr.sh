@@ -1,7 +1,19 @@
 #!/bin/bash
 
 set -e
-#set -x
+
+logerr() {
+    1>&2 echo "$@"
+}
+
+log() {
+    echo "$@"
+}
+
+cnf() {
+    logerr "$@"
+    exit 1
+}
 
 which base64 > /dev/null     || cnf "base64: not found"
 which gfsplit > /dev/null    || cnf "gfsplit: not found, install libgfsplit or related packages"
